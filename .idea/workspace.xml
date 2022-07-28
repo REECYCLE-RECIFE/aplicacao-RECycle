@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-dados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/repositoris/AdministradorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/repositoris/AdministradorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-dados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +101,17 @@
       <updated>1656517207882</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
