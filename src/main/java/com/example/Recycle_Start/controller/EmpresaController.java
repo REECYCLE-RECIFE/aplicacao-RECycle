@@ -78,7 +78,7 @@ return "redirect:/login-empresa";
     @GetMapping ("/editarEmpresa")
     public String editarLoja( String cnpj, Model model) {
         model.addAttribute("empresa", empresaService.empresaCnpj(cnpj));
-        return "config-empresa";
+        return "empresa.dados";
     }
 
    @PostMapping("atualizarEnpresa")
@@ -87,12 +87,12 @@ return "redirect:/login-empresa";
             System.out.println(result.getAllErrors().get(0).getDefaultMessage());
             empresa.setSenha(Util.md5(empresa.getSenha()));
             System.out.println(empresa.getCnpj());
-            return "empresa-principal";
+            return "empresa.principal";
         } else {
             System.out.println(empresa.getCnpj());
             empresa.setSenha(Util.md5(empresa.getSenha()));
             empresaService.salvarEmpresa(empresa);
-            return "empresa-principal";
+            return "empresa.principal";
         }
    }
 

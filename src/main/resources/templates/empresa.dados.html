@@ -32,7 +32,8 @@
     </nav>
 </header>
 <div class="container">
-    <form action=""  th:action="@{/salvaEmpresa}" th:object="${empresa}" method="post">
+    <form action=""  th:action="@{/atualizarEnpresa}" th:object="${empresa}" method="post">
+        <input type = "hidden" th:field="*{cnpj}" >
         <div class="cadastro-left">
             <div class="form-header">
                 <div class="title-h1">

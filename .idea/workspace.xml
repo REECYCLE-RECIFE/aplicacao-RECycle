@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style-empresa-dados.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style-empresa-dados.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style-empresa-dados.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style-empresa-dados.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

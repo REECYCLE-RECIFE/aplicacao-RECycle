@@ -7,7 +7,11 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+<<<<<<< HEAD
 /Blocos do Cadastro/
+=======
+/*Blocos do Cadastro*/
+>>>>>>> origin/master
 .container {
     background: var(--backgroud);
     width: 100%;
@@ -47,9 +51,15 @@ form {
     border-radius: 0px 10px 10px 0px;
 }
 
+<<<<<<< HEAD
 /Blocos do Cadastro/
 
 /Nome Cadastro e Botão Entrar/
+=======
+/*Blocos do Cadastro*/
+
+/*Nome Cadastro e Botão Entrar*/
+>>>>>>> origin/master
 
 
 .form-header {
@@ -75,7 +85,11 @@ form {
 }
 
 
+<<<<<<< HEAD
 /Botão REAPROVEITADO CUIDADO!!!!!!/
+=======
+/*Botão REAPROVEITADO CUIDADO!!!!!!*/
+>>>>>>> origin/master
 
 .input-group {
     display: flex;
@@ -149,7 +163,11 @@ form {
 }
 
 
+<<<<<<< HEAD
 /CEP E NUMERO BUTÃO/
+=======
+/*CEP E NUMERO BUTÃO*/
+>>>>>>> origin/master
 
 .cep-rua {
     display: flex;
@@ -191,4 +209,8 @@ form {
     border-radius: 8px;
     color: rgb(96, 110, 97) ;
     box-shadow: 0px 10px 40px #00000056;
+<<<<<<< HEAD
 }
+=======
+}}
+>>>>>>> origin/master

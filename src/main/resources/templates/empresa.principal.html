@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,7 @@
         </div>
         <ul class="nav-list">
             <li><a href="/Telas-Condominio">Agendamentos</a></li>
-            <li class="cor-unica"><a href="/configuracao-empresa">Dados</a></li>
+            <li><a class="cor-unica" th:href = "|/editarEmpresa?cnpj=${session.usuarioLogado.cnpj}|">Dados </a></li>
         </ul>
         <ul class="nav-list">
           <li class="a-hover"><a href="/index">Sair</a></li>
