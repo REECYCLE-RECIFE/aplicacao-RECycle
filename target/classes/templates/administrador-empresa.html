@@ -1,12 +1,21 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
+=======
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
+>>>>>>> 35eac2e5f200fa6728b976d7e2d76e61fcb850c0
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuários</title>
     <script type='text/javascript' src="main.js"></script>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style-administrador-empresa.css">
     <link rel="stylesheet" href="style.css">
+=======
+    <link rel="stylesheet" href="css/style-administrador-empresa.css">
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> 35eac2e5f200fa6728b976d7e2d76e61fcb850c0
 </head>
 <body page='lista'>
     <header>
@@ -33,6 +42,7 @@
                 <a href="#" class="search-bnt"><img src="/img/lupa.png" alt="Search" height="20"></a>
             </div>
         </div>
+<<<<<<< HEAD
         <table>
             <thead>
                 <tr>
@@ -82,5 +92,30 @@
     </form>
     </div>
 
+=======
+    <table>
+                <tr>
+                    <th>nome</th>
+                    <th>Bairro</th>
+                    <th>cnpj</th>
+                    <th>remover</th>
+                </tr>
+            <tr th:each = "empresa : ${empresa}">
+                <td th:text="${empresa.nome}"></td>
+                <td th:text = "${empresa.bairro}"></td>
+                <td th:text = "${empresa.cnpj}"></td>
+
+                <td><i id="icon_remover" class="fa fa-trash"
+                       aria-hidden="true" > <a th:href = "@{/deletar/{cnpj} (cnpj=${empresa.cnpj})}"> remover </a> </i></td>
+
+            </tr>
+
+
+    </table>
+    </form>
+    </div>
+    </div>
+    </div>
+>>>>>>> 35eac2e5f200fa6728b976d7e2d76e61fcb850c0
 </body>
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuários</title>
     <script type='text/javascript' src="main.js"></script>
-    <link rel="stylesheet" href="style-administrador-empresa.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-administrador-empresa.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body page='lista'>
     <header>
@@ -33,54 +33,28 @@
                 <a href="#" class="search-bnt"><img src="/img/lupa.png" alt="Search" height="20"></a>
             </div>
         </div>
-        <table>
-            <thead>
+    <table>
                 <tr>
-                    <th>CNPJ</th>
-                    <th>Empresa</th>
-                    <th>Telefone</th>
-                    <th></th>
+                    <th>nome</th>
+                    <th>Bairro</th>
+                    <th>cnpj</th>
+                    <th>remover</th>
                 </tr>
-            </thead>
-            <tbody id='listaRegistrosBody'></tbody>
-        </table>
+            <tr th:each = "empresa : ${empresa}">
+                <td th:text="${empresa.nome}"></td>
+                <td th:text = "${empresa.bairro}"></td>
+                <td th:text = "${empresa.cnpj}"></td>
 
-        <div>
-            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
-        </div>
-        </div>
-    </div>
+                <td><i id="icon_remover" class="fa fa-trash"
+                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> remover </a> </i></td>
 
-    <form id='cadastroRegistro'>
+            </tr>
 
-        <div class='label'>
-            <div>CNPJ</div>
-            <div>
-                <input type='text' readonly id='id' />
-            </div>
-        </div>
 
-        <div class='label'>
-            <div>Nome</div>
-            <div>
-                <input id='nome' type="text"/>
-            </div>
-        </div>
-
-        <div class='label'>
-            <div>Fone</div>
-            <div>
-                <input type='tel' id='fone' />
-            </div>
-        </div>
-
-        <div>
-            <button>Salvar</button>
-            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
-        </div>
-
+    </table>
     </form>
     </div>
-
+    </div>
+    </div>
 </body>
 </html>

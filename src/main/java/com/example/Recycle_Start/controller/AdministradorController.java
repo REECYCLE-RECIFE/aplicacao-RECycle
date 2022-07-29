@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -21,16 +18,23 @@ public class AdministradorController {
     @Autowired
     AdministradorService administradorService;
 
-    @GetMapping("/CadastroAdm")
-    public String CadastroAdm(Administrador administrador){
-        return " cadastroadm";
+
+    @GetMapping("/Administrador")
+    public String MostraAdm(Administrador administrador){
+        return "administrador-principal";
     }
 
-    @PutMapping("/SalvaUsuario")
+    @GetMapping("/CadastroAdm")
+    public String CadastroAdm(Administrador administrador){
+        return "administrador-cadastro";
+    }
+
+
+    @PostMapping("/Salvaadm")
     public String novoADM(@ModelAttribute("administrador") Administrador administrador){
          administrador.setSenha(Util.md5(administrador.getSenha()));
          administradorService.SalvaAdministrador(administrador);
-         return "redirect: login";
+         return "redirect:/loginAdm";
 
     }
 
