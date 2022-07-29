@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Principal Administrador</title>
     <link rel="shortcut icon" type="image/jpg" href="../img/favicon.ico"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="style-administrador-principal.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style-administrador-principal.css">
     <!--<a href="https://storyset.com/people">People illustrations by Storyset</a>-->
   </head>
   <body>
@@ -34,7 +34,7 @@
               </div>      
                 <h3>Empresa</h3>
                     <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
-                    <button type="subimit"><a href="#">Consultar</a></button>
+                    <button type="subimit"><a th:href="@{/empresas}">Consultar</a></button>
             </section>
             <section class="card n2">
               <div class="icon">

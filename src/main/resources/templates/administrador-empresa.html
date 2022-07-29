@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuários</title>
+    <title>Empresa</title>
     <script type='text/javascript' src="main.js"></script>
     <link rel="stylesheet" href="css/style-administrador-empresa.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
 </head>
 <body page='lista'>
     <header>
@@ -20,7 +21,7 @@
             <li class="a-hover"><a href="#"></a></li>
           </ul>
           <ul class="nav-list">
-            <li class="a-hover"><a href="/index">Voltar</a></li>
+            <li class="a-hover"><a href="/Administrador">Voltar</a></li>
           </ul>
         </nav>
       </header>
@@ -32,13 +33,16 @@
                 <input class="search-txt" placeholder="PESQUISAR" autofocus id='inputPesquisa'/>
                 <a href="#" class="search-bnt"><img src="/img/lupa.png" alt="Search" height="20"></a>
             </div>
+            <div class="text-table">
+              <h1>Empresa</h1>
+            </div>
         </div>
     <table>
                 <tr>
-                    <th>nome</th>
-                    <th>Bairro</th>
-                    <th>cnpj</th>
-                    <th>remover</th>
+                    <th>NOME</th>
+                    <th>BAIRRO</th>
+                    <th>CNPJ</th>
+                    <th>REMOVER</th>
                 </tr>
             <tr th:each = "empresa : ${empresa}">
                 <td th:text="${empresa.nome}"></td>
@@ -46,7 +50,9 @@
                 <td th:text = "${empresa.cnpj}"></td>
 
                 <td><i id="icon_remover" class="fa fa-trash"
-                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> remover </a> </i></td>
+                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> <img src="img/excluir.png"
+                                                                                                          alt="icon-lixeira"
+                                                                                                          width="32px"> </a> </i></td>
 
             </tr>
 
