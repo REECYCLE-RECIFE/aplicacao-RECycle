@@ -64,15 +64,15 @@ return "redirect:/login-empresa";
     public String mostraEmpresa(Model model) {
         List<Empresa> empresa = empresaService.mostraEmpresas();
         model.addAttribute("empresa", empresa);
-        return "mais-empresa";
+        return "administrador-empresa";
     }
 
 
     // para deletar empresa
-    @GetMapping("/deletar")
-    private String deletarEmpresa(@PathVariable("idEmpresa") String cnpj, Model model) {
+    @GetMapping("/deletar/{cnpj}")
+    private String deletarEmpresa(@PathVariable("cnpj") String cnpj, Model model) {
         empresaService.excluirEmpresa(cnpj);
-        return "index";
+        return "/Administrador";
     }
 
     @GetMapping ("/editarEmpresa")

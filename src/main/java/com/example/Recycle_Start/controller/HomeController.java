@@ -19,12 +19,6 @@ public class HomeController {
     }
 
 
-    // cadastro
-   /* @GetMapping("/cadastra-condominio")
-    public String getCadatroCondominio(){
-        return "registro-condominio";
-    }*/
-
       @GetMapping("/cadastro-empresa")
     public String getCadatroEmpresa(){
         return "registro-empresa";
@@ -36,5 +30,7 @@ public class HomeController {
     public String getLgpd(){
         return"termos-lgpd";
     }
+
+
 
 }

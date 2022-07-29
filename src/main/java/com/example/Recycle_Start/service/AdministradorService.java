@@ -16,15 +16,19 @@ public class AdministradorService {
         administradorRepository.deleteById(id_adm);
     }
 
-    // salva  usuario
+    // salva  adm
     public Administrador SalvaAdministrador(Administrador administrador) {
         administradorRepository.save(administrador);
         return administradorId(administrador.getId_adm());
 
     }
 
-// edita usuario
+// edita adm
     public Administrador administradorId(Integer id_adm) {
         return administradorRepository.findById(id_adm).get();
+    }
+
+    public Administrador loginAdministrador(String email, String senha) {
+        return administradorRepository.findByLoginAndSenha(email, senha);
     }
 }

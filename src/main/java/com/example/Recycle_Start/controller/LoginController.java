@@ -1,8 +1,10 @@
 package com.example.Recycle_Start.controller;
 
+import com.example.Recycle_Start.model.Administrador;
 import com.example.Recycle_Start.model.Empresa;
 import com.example.Recycle_Start.model.Usuario;
 import com.example.Recycle_Start.repositoris.Util;
+import com.example.Recycle_Start.service.AdministradorService;
 import com.example.Recycle_Start.service.EmpresaService;
 import com.example.Recycle_Start.service.UsuarioService;
 
@@ -21,6 +23,9 @@ public class LoginController {
 
     @Autowired
   private EmpresaService empresaService;
+
+    @Autowired
+    private AdministradorService administradorService;
 
     @GetMapping("/login")
     public String getLoginCondominio(Usuario usuario){
@@ -76,6 +81,25 @@ public class LoginController {
         }
     }
 
+    // login adm
 
+    @GetMapping( "/loginAdm")
+    public String admLogin(Administrador administrador){
+        return "login-administrador";
+    }
 
+    @PostMapping("/fetuarLoginAdm")
+    public  String efetuarLoginAdministrador( Administrador administrador, RedirectAttributes  ra, HttpSession session ){
+        administrador = administradorService.loginAdministrador(administrador.getEmail(), Util.md5(administrador.getSenha()));
+        if (administrador != null){
+            session.setAttribute("usuarioLogado", administrador);
+            return "redirect:/Administrador";
+        }
+        else {
+            // enviar mensage de não perminito
+            ra.addFlashAttribute("messagem", "login/semha invalida" );
+            return "redirect:/loginAdm";
+
+        }
+    }
 }

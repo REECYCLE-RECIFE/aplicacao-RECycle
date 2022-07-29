@@ -6,14 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style-empresa-dados.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style-empresa-dados.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/repositoris/AdministradorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/repositoris/AdministradorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-empresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-empresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login-administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login-administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style-empresa-dados.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style-empresa-dados.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Administrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/repositoris/AdministradorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/repositoris/AdministradorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
