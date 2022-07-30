@@ -60,12 +60,12 @@ public class AdministradorController {
         }
 
     }
-        @GetMapping("/delete/{id_adm}")
-    private String deletarUsuario(@PathVariable("id_adm") Integer id_adm){
+       /* @GetMapping("/delete/{id_adm}")
+    private String deletaradm(@PathVariable("id_adm") Integer id_adm){
         administradorService.ExcluirAdm(id_adm);
         return "adm";
         }
-
+*/
 
 
 

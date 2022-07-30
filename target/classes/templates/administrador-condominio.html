@@ -38,23 +38,22 @@
             </div>
         </div>
     <table>
-                <tr>
-                    <th>NOME</th>
-                    <th>BAIRRO</th>
-                    <th>CNPJ</th>
-                    <th>REMOVER</th>
-                </tr>
-            <tr th:each = "empresa : ${empresa}">
-                <td th:text="${empresa.nome}"></td>
-                <td th:text = "${empresa.bairro}"></td>
-                <td th:text = "${empresa.cnpj}"></td>
+        <tr>
+            <th>Nome Completo</th>
+            <th>E-mail</th>
+            <th>CPF</th>
+            <th>Remover</th>
+        </tr>
+        <tr th:each = "usuario : ${usuario}">
+            <td th:text = "${usuario.nome}"></td>
+            <td th:text = "${usuario.email}"></td>
+            <td th:text = "${usuario.cpf}"></td>
+            <td><i id="icon_remover" class="fa fa-trash"
+                   aria-hidden="true" > <a th:href="@{/delete/{cpf}(cpf=${usuario.cpf})}"> <img src="img/excluir.png"
+                                                                                                    alt="icon-lixeira"
+                                                                                                    width="32px"> </a> </i></td>
 
-                <td><i id="icon_remover" class="fa fa-trash"
-                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> <img src="img/excluir.png"
-                                                                                                          alt="icon-lixeira"
-                                                                                                          width="32px"> </a> </i></td>
-
-            </tr>
+        </tr>
 
 
     </table>

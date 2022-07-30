@@ -99,8 +99,8 @@ public class UsuarioController {
     @GetMapping("/usuarios")
     public  String mostraUsuario(Model model){
         List<Usuario> usuario =  usuarioService.mostraUsuario();
-        model.addAttribute("usuarios",usuario);
-        return "mais-usuario";
+        model.addAttribute("usuario",usuario);
+        return "administrador-condominio";
     }
 
 
@@ -150,9 +150,9 @@ public class UsuarioController {
     // Para deletar todos os Usuarios
 
     @GetMapping("/delete/{cpf}")
-    private String deletarUsuario(@PathVariable("cpf") String cpf) {
+    private String deletarUsuario(@PathVariable("cpf") String cpf, Model model) {
         usuarioService.excluirUsuario(cpf);
-        return "usuario";
+        return "redirect:/usuarios";
     }
 
     

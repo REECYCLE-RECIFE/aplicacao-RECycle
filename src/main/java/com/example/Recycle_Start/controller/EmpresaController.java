@@ -70,9 +70,9 @@ return "redirect:/login-empresa";
 
     // para deletar empresa
     @GetMapping("/deletar/{cnpj}")
-    private String deletarEmpresa(@PathVariable("cnpj") String cnpj, Model model) {
+    private String deletarEmpresa(@PathVariable("cnpj") String  cnpj, Model model) {
         empresaService.excluirEmpresa(cnpj);
-        return "/Administrador";
+        return "redirect:/empresas";
     }
 
     @GetMapping ("/editarEmpresa")

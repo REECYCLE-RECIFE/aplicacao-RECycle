@@ -12,9 +12,9 @@ public class AdministradorService {
     private AdministradorRepository administradorRepository;
 
     // excluir Adm
-    public void ExcluirAdm(Integer id_adm){
+   /* public void ExcluirAdm(Integer id_adm){
         administradorRepository.deleteById(id_adm);
-    }
+    }*/
 
     // salva  adm
     public Administrador SalvaAdministrador(Administrador administrador) {
