@@ -5,22 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/agendamento-condominio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/agendamento-condominio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/EmpresaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AdministradorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-condominio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-condominio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-empresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-empresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AdministradorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/EmpresaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AgendamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Agendamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Agendamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AgendamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AgendamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-agendamento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AgendamentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AgendamentoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Agendamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Agendamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Empresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Empresa.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AdministradorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-condominio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-condominio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-empresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-empresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AgendamentoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AgendamentoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-agendamento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,6 +78,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/victo/Desktop/aplicação-Recycle&quot;,
@@ -104,7 +109,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae77d4de-ef50-471c-bb18-f66989e13d41" name="Changes" comment="" />
+      <changelist id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="" />
       <created>1656517207882</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -134,6 +139,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="org.hibernate.tool.schema.spi.CommandAcceptanceException" package="org.hibernate.tool.schema.spi" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.expression.spel.SpelEvaluationException" package="org.springframework.expression.spel" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog>
+          <selected-grouping-rules>
+            <grouping-rule id="XBreakpointGroupingByClassRule" />
+            <grouping-rule id="by-file" />
+          </selected-grouping-rules>
+        </breakpoints-dialog>
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

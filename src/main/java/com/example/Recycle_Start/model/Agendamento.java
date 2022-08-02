@@ -20,10 +20,10 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id_agendamento;
 
-    @Column(nullable = false, name = "nome_usuario")
+    @Column(nullable = false, name = "nome")
     private String nome;
 
-    @Column (nullable = false, name = "cpf_usuario")
+    @Column (nullable = false, name = "cpf")
     private String cpf;
 
     @Column (nullable = false , name = "quantidade_de_apartamaneto_do_usuario ")
@@ -32,11 +32,11 @@ public class Agendamento {
     @Column(nullable = false, name = "frequencia")
     private String frequecia;
 
-    @DateTimeFormat(pattern = "HH:mm:ss")
+    @Column(nullable = false , name = "horaDoAgendamanto")
     private String horaDoAgendamento;
 
-    @DateTimeFormat (pattern = "DD:mm:aaaa")
-    private LocalDate diaDoAgendamento;
+    @Column(nullable = false , name = "diaDoAgendamanto")
+    private String  diaDoAgendamento;
 
 
     @Column (nullable = false, name =  "estado_Usuario")
@@ -64,13 +64,12 @@ public class Agendamento {
     private String cep;
 
 
-    /*@ManyToOne // MUITOS PARA UM
-    @JoinColumn(name = "cnpj_id")
+    @ManyToOne // MUITOS PARA UM
+    @JoinColumn(name = "cnpj")
     private Empresa empresa;
 
-    @ManyToOne // MUITOS PARA UM
-    @JoinColumn(name = "cpf_id")
+    /*@ManyToOne // MUITOS PARA UM
+    @JoinColumn(name = "cpf")
     private Usuario usuario;*/
-
 
 }

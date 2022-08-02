@@ -4,11 +4,10 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.List;
+
 @Data
 @Getter @Setter
 @Entity
@@ -57,6 +56,7 @@ public class Empresa {
     @Column (nullable = false, name =  "cep_empresa")
     @NotBlank (message = "o  campo não pode esta  vazio")
     private String cep;
+
 
     public String getCnpj() {
         return cnpj;

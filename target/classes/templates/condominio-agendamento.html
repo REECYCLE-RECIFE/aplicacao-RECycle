@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt=br" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@
       <div class="cadastro">
       <div class="container">
         <div class="form">
-            <form action="#">
+            <form  th:action="@{/salvarAgendamento}" th:object="${agendamento}" method="post">
               <div class="form-header">
                 <div class="title">
                     <h1>Agendamento</h1>
@@ -43,20 +43,20 @@
               <div id="input-group">
                 <div class="input-box">
                   <label for="nome-condominio">Nome</label>
-                  <input id="nome-condominio" type="text" name="nome-condominio" placeholder="Informe o nome do condominio" required>
+                  <input id="nome-condominio" type="text" name="nome" placeholder="Informe o nome do condominio" th:field="*{nome}" required >
                 </div>
                 <div class="input-box">
                   <label for="cpf/cnpj">CPF ou CNPJ</label>
-                  <input id="cpf/cnpj" type="text" name="cpf/cnpj" placeholder="Digite o CPF ou CNPJ" required>
+                  <input id="cpf/cnpj" type="text" name="cpf" placeholder="Digite o CPF ou CNPJ" th:field="*{cpf}" required>
                 </div>
                 <div class="input-box">
                   <label for="moradores">Moradores</label>
-                  <input id="moradores" type="text" name="moradores" placeholder="Digite a quantidade de moradores" required>
+                  <input id="moradores" type="text" name="moradores" placeholder="Digite a quantidade de moradores"th:field="*{apartamento}" required>
                 </div>
                   <div class="security-select">
                     <label for="recorrencia">Recorrência</label>
                     <select name="recorrencia" id="">
-                      <option selected="" value="" disabled>Recorrência</option>
+                      <option selected="" value="" disabled th:field="*{ferquencia}">Recorrência </option>
                       <option value="semanal">Semanal</option>
                       <option value="quinzenal">Quinzenal</option>
                       <option value="mensal">Mensal</option>
@@ -65,47 +65,48 @@
                 <div class="data-hora">
                   <div class="input-data">
                     <label for="hora">Hora</label>
-                    <input id="hora" type="time" name="hora" placeholder="hora" required>  
+                    <input id="hora" type="time" name="hora" placeholder="hora" th:field="*{horaDoAgendamento}"required>
                   </div>
+                    <div class="data-hora">
+                        <div class="input-data">
+                            <label for="hora">Hora</label>
+                            <input id="hora" type="time" name="cnpj" placeholder="hora" th:field="*{cnpj}"required>
+                        </div>
                   <div class="input-hora">
                     <label for="data">Data</label>
-                    <input id="data" type="date" name="data" placeholder="data" required>  
+                    <input id="data" type="date" name="data" placeholder="data" th:field="*{diaDoAgendamento}"required>
                   </div>
                 </div>
               </div>
-              <div class="continue-button">
-                <button><a href="#">Continuar</a></button>
-              </div>
-            </form>
-        </div>
+
         <div class="form-end">
-          <form action="#">
+
             <div class="cep-rua">
               <div class="input-CEP">
                 <label for="cep" style="color: white;">CEP</label>
-                <input id="cep" type="text" name="cep" placeholder="EX:00000-000" required>
+                <input id="cep" type="text" name="cep" placeholder="EX:00000-000" th:field="*{cep}" required>
               </div>
               <div class="input-numero">
                 <label for="numero">Número</label>
-                <input id="numero" type="text" name="numero" placeholder="EX: 120" required>
+                <input id="numero" type="text" name="numero" placeholder="EX: 120" th:field="*{numero}" required>
               </div>
             </div>
             <div class="input-box">
               <label for="rua">Rua</label>
-              <input id="rua" type="text" name="rua" placeholder="Infome a Rua" required>
+              <input id="rua" type="text" name="rua" placeholder="Infome a Rua" th:field="*{rua}" required>
            </div>
            <div class="input-box">
               <label for="Cidade">Cidade</label>
-              <input id="Cidade" type="text" name="Cidade" placeholder="Infome a Cidade" required>
+              <input id="Cidade" type="text" name="Cidade" placeholder="Infome a Cidade" th:field="*{cidade}" required>
            </div>
            <div class="input-box">
               <label for="Bairro">Bairro</label>
-              <input id="Bairro" type="text" name="Bairro" placeholder="Infome o Bairro" required>
+              <input id="Bairro" type="text" name="Bairro" placeholder="Infome o Bairro" th:field="*{bairro}" required>
            </div>
            <div class="select-box">
               <label for="Estado">Estado</label>
               <select name="estado">
-                  <option selected="" value="" disabled>Selecione o Estado (UF)</option>
+                  <option selected="" value="" disabled th:field="*{estado}">Selecione o Estado (UF)</option>
                   <option value="Acre">Acre</option>
                   <option value="Alagoas">Alagoas</option>
                   <option value="Amapá">Amapá</option>
@@ -134,6 +135,9 @@
                   <option value="Sergipe">Sergipe</option>
                   <option value="Tocantins">Tocantins</option>
               </select>
+               <div class="continue-button">
+                   <button><a href="#">Continuar</a></button>
+               </div>
            </div>
           </form>
         </div>
