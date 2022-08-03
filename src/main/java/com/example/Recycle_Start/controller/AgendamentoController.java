@@ -28,8 +28,9 @@ public class AgendamentoController {
     private UsuarioService usuarioService;
 
     @GetMapping ("/agendamento")
-    public String getAgendament(Model model, String cnpj) {
-        model.addAttribute("Empresa", this.empresaService.empresaCnpj(cnpj));
+    public String getAgendament(Agendamento agendamento) {
+        /*model.addAttribute("Empresa", this.empresaService.empresaCnpj(cnpj));*/
+
         return "condominio-agendamento";
     }
 
@@ -37,7 +38,7 @@ public class AgendamentoController {
     @PostMapping("/salvarAgendamento")
     public String novoAgendamento(Agendamento agendamento) {
         agendamentoService.salvarAgendamento(agendamento);
-        return "/usuario";
+        return "redirect:/usuario";
     }
 
     //para mostsra as em presa e ir para a agendamento
@@ -51,7 +52,7 @@ public class AgendamentoController {
     @GetMapping("/Agendamantos")
     public  String MostraAgenda(Model model){
         List<Agendamento> agendamentos = agendamentoService.mostraAgendamanto();
-        model.addAttribute("agenadamanto", agendamentos);
+        model.addAttribute("agendamento", agendamentos);
         return "administrador-agendamento";
     }
 

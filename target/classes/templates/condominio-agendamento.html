@@ -55,8 +55,8 @@
                 </div>
                   <div class="security-select">
                     <label for="recorrencia">Recorrência</label>
-                    <select name="recorrencia" id="">
-                      <option selected="" value="" disabled th:field="*{ferquencia}">Recorrência </option>
+                    <select name="frequecia" id="">
+                      <option selected="" value="" disabled th:field="*{frequecia}">Recorrência </option>
                       <option value="semanal">Semanal</option>
                       <option value="quinzenal">Quinzenal</option>
                       <option value="mensal">Mensal</option>
@@ -67,11 +67,6 @@
                     <label for="hora">Hora</label>
                     <input id="hora" type="time" name="hora" placeholder="hora" th:field="*{horaDoAgendamento}"required>
                   </div>
-                    <div class="data-hora">
-                        <div class="input-data">
-                            <label for="hora">Hora</label>
-                            <input id="hora" type="time" name="cnpj" placeholder="hora" th:field="*{cnpj}"required>
-                        </div>
                   <div class="input-hora">
                     <label for="data">Data</label>
                     <input id="data" type="date" name="data" placeholder="data" th:field="*{diaDoAgendamento}"required>
@@ -136,10 +131,11 @@
                   <option value="Tocantins">Tocantins</option>
               </select>
                <div class="continue-button">
-                   <button><a href="#">Continuar</a></button>
+                   <button><a  class="btn-login" type="submit"  value="Submit">Continuar</a></button>
                </div>
            </div>
           </form>
+        </div>
         </div>
       </div>
     </div>

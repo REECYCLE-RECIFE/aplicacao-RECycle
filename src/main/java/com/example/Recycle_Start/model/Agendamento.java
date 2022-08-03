@@ -20,10 +20,10 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id_agendamento;
 
-    @Column(nullable = false, name = "nome")
+    @Column(nullable = false, name = "nome_usuario")
     private String nome;
 
-    @Column (nullable = false, name = "cpf")
+    @Column (nullable = false, name = "cpf_usuario")
     private String cpf;
 
     @Column (nullable = false , name = "quantidade_de_apartamaneto_do_usuario ")
@@ -32,10 +32,10 @@ public class Agendamento {
     @Column(nullable = false, name = "frequencia")
     private String frequecia;
 
-    @Column(nullable = false , name = "horaDoAgendamanto")
+    @Column(nullable = false , name = "horaDoAgendamento")
     private String horaDoAgendamento;
 
-    @Column(nullable = false , name = "diaDoAgendamanto")
+    @Column(nullable = false , name = "diaDoAgendamento")
     private String  diaDoAgendamento;
 
 
@@ -68,8 +68,8 @@ public class Agendamento {
     @JoinColumn(name = "cnpj")
     private Empresa empresa;
 
-    /*@ManyToOne // MUITOS PARA UM
+    @ManyToOne // MUITOS PARA UM
     @JoinColumn(name = "cpf")
-    private Usuario usuario;*/
+    private Usuario usuario;
 
 }
