@@ -21,7 +21,7 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a th:href = "|/agendamento|">Agendamento</a></li>
+            <li><a th:href = "#">Principal</a></li>
             <li><a href="/coleta">Coleta</a></li>
             <li><a class="botao" th:href = "|/editarUsuario?cpf=${session.usuarioLogado.cpf}|"> <span> Dados </span><i
                     class="fa fa-cog" aria-hidden="true"></i></a></li>
@@ -44,23 +44,23 @@
               <div class="icon">
                 <img src="../img/Lixeira01.png" alt="Lixeira_Reciclagem" width="100px">
               </div>      
-                <h3>Empresa Reciclagem LTDA</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
-                    <button type="subimit"><a th:href = "@{/AgendamentoUsuario}">Agendar</a></button>
+                <h3>Agendamento</h3>
+                    <span>Agenda.</span>
+                    <button type="subimit"><a th:href = "|/agendamento|">Agendar</a></button>
             </section>
             <section class="card n2">
               <div class="icon">
                 <img src="../img/Lixeira02.png" alt="Lixeira_Reciclagem" width="100px">
-              </div>  
-                <h3>Empresa Recycle LTDA</h3>
-                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
-                <button><a href="/Telas-Condominio/condominio-agendamento.html">Agendar</a></button>
+              </div>
+                <h3>Lista de Empresas</h3>
+                <span>Empresas listadas no RECycle.</span>
+                <button><a href="@{/AgendamentoUsuario}">Lista</a></button>
             </section>
             <section class="card n3">
               <div class="icon">
                 <img src="../img/Usina01.png" alt="Usina_Reciclagem" width="100px">
               </div>
-                <h3>Corporativa Reciclagem LT</h3>
+                <h3>Lista de Materias</h3>
                 <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
                 <button><a href="/Telas-Condominio/condominio-agendamento.html">Agendar</a></button>
             </section>

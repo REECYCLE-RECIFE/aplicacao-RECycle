@@ -82,9 +82,8 @@
 .form {
     
     width: 35%;
-    height: 88vh;
+    height: 75vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--primary);
@@ -94,13 +93,13 @@
 
 .form-end {
     width: 30%;
-    height: 88vh;
+    height: 75vh;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     background-color: var(--primary);
     border-radius: 0px 20px 20px 0px;
-    padding: 3rem;
 }
 
 
@@ -111,6 +110,7 @@
 .cep-rua {
     display: flex;
     padding: 1rem 0;
+    margin-top: 6.5rem;
 }
 
 .input-CEP > input {
@@ -146,31 +146,6 @@
     justify-content: space-between;
 }
 
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-.login-button button {
-    border: none;
-    background-color: rgba(0, 0, 0, 0.568);
-    padding: 0.4rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px black ;
-}
-.login-button button a{
-    text-decoration: none;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    color: white ;
-}
-
-.login-button button:hover {
-    background-color: rgba(0, 0, 0, 0.450);
-    transition: 0.6s;
-}
-
 .form-header h1::after {
     content: '';
     display: block;
@@ -201,15 +176,20 @@
     color: white;
 }
 
+.select-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 .select-box label {
     color: white;
+    margin-bottom: 10px;
 }
 .select-box > select {
     border: none;
     padding: 4px;
     background-color: white;
     border-radius: 8px;
-    margin-left: ;
 }
 
 .input-box > input {
@@ -224,12 +204,13 @@
 
 .continue-button {
     display: flex;
-    justify-content: center;
+    padding-left: 3rem;
+    te
 }
 
 .continue-button > button  {
-    width: 70%;
-    padding: 16px 0px;
+    width: 100%;
+    padding: 20px 24px;
     margin: 25px;
     border: none;
     border-radius: 8px;
@@ -240,24 +221,14 @@
 }
 
 .continue-button > button a {
+    text-align: center;
     color: aliceblue;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2.5px;
     text-decoration: none;
 }
-
-@media screen and (max-width: 1280px) {
-    .form-image {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
-    .form-end {
-        width: 60%;
-    }
+button:hover {
+    background-color: rgba(0, 0, 0, 0.675);
+    transition: 0.5s;
 }
