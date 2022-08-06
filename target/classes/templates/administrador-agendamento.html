@@ -40,23 +40,38 @@
     <table>
                 <tr>
                     <th>NOME</th>
+                    <th>CPF</th>
+                    <th>APARTAMENTO</th>
+                    <th>FREQUENCIA</th>
+                    <th>HORA</th>
+                    <th>DIA</th>
+                    <th>ESTADO</th>
+                    <th>CIDADE</th>
                     <th>BAIRRO</th>
-                    <th>CNPJ</th>
+                    <th>RUA</th>
+                    <th>NUMERO</th>
+                    <th>CEP</th>
                     <th>REMOVER</th>
                 </tr>
-            <tr th:each = "empresa : ${empresa}">
-                <td th:text="${empresa.nome}"></td>
-                <td th:text = "${empresa.bairro}"></td>
-                <td th:text = "${empresa.cnpj}"></td>
-
+            <tr th:each = "agendamento : ${agendamento}">
+                <td th:text="${agendamento.nome}"></td>
+                <td th:text = "${agendamento.cpf}"></td>
+                <td th:text = "${agendamento.apartamento}"></td>
+                <td th:text="${agendamento.frequecia}"></td>
+                <td th:text = "${agendamento.horaDoAgendamento}"></td>
+                <td th:text = "${agendamento.diaDoAgendamento}"></td>
+                <td th:text="${agendamento.estado}"></td>
+                <td th:text="${agendamento.cidade}"></td>
+                <td th:text = "${agendamento.bairro}"></td>
+                <td th:text = "${agendamento.rua}"></td>
+                <td th:text = "${agendamento.numero}"></td>
+                <td th:text = "${agendamento.cep}"></td>
                 <td><i id="icon_remover" class="fa fa-trash"
-                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> <img src="img/excluir.png"
+                       aria-hidden="true" > <a th:href="@{/deletar/{id_agendamento}(id_agendamento=${agendamento.id_agendamento})}"> <img src="img/excluir.png"
                                                                                                           alt="icon-lixeira"
                                                                                                           width="32px"> </a> </i></td>
 
             </tr>
-
-
     </table>
     </form>
     </div>

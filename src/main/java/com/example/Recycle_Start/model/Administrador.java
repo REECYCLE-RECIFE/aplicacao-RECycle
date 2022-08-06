@@ -28,4 +28,7 @@ public class Administrador {
     @OneToMany
     private List<Usuario> usuario;
 
+    @OneToMany
+    private  List<Agendamento> agendamentos;
+
 }

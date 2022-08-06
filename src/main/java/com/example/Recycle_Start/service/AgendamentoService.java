@@ -29,5 +29,10 @@ public class AgendamentoService {
     public List<Agendamento> mostraAgendamanto() {
         return (List<Agendamento>) agendamentoRepository.findAll();
     }
+
+    // excluir agendamanto
+    public void excluirAgendamanto(Integer id_agendamento) {
+        agendamentoRepository.deleteById(id_agendamento);
+    }
 }
 

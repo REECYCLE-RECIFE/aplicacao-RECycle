@@ -21,7 +21,7 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a th:href = "#">Principal</a></li>
+            <li><a href = "#">Principal</a></li>
             <li><a href="/coleta">Coleta</a></li>
             <li><a class="botao" th:href = "|/editarUsuario?cpf=${session.usuarioLogado.cpf}|"> <span> Dados </span><i
                     class="fa fa-cog" aria-hidden="true"></i></a></li>
@@ -40,7 +40,7 @@
               </div>      
                 <h3>Lista de Empresas</h3>
                     <span>Empresas cadastradas para coleta no RECycle.</span>
-                    <button type="subimit"><a th:href = "|/agendamento|">Lista</a></button>
+                    <button type="subimit"><a th:href="@{/AgendamentoUsuario}">Lista</a></button>
             </section>
             <section class="cardes n2">
                 <h1>Agendamento</h1>
@@ -48,7 +48,7 @@
                   <img src="../img/Lixeira02.png" alt="Lixeira_Reciclagem" width="100px">
                 </div>
                 <span>Agendamento para a coleta dos itens reciclado.</span>
-                <button><a href="@{/AgendamentoUsuario}">agendar</a></button>
+                <button><a  th:href = "|/agendamento|">agendar</a></button>
             </section>
             <section class="card n3">
               <div class="icon">

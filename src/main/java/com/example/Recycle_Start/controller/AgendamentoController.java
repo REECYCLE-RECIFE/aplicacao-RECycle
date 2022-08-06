@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
@@ -51,9 +52,14 @@ public class AgendamentoController {
 //  mostra agenadamanto
     @GetMapping("/Agendamantos")
     public  String MostraAgenda(Model model){
-        List<Agendamento> agendamentos = agendamentoService.mostraAgendamanto();
-        model.addAttribute("agendamento", agendamentos);
+        List<Agendamento> agendamento = agendamentoService.mostraAgendamanto();
+        model.addAttribute("agendamento", agendamento);
         return "administrador-agendamento";
     }
 
+    @GetMapping("/deletar/{id_agendamento}")
+    public String deletarEmpresa( Integer  id_agendamento, Model model) {
+        agendamentoService.excluirAgendamanto(id_agendamento);
+        return "redirect:/enpresas";
+    }
 }
