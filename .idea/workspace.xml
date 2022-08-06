@@ -7,24 +7,17 @@
     <list default="true" id="9ed22438-7ccf-4996-94a7-dd698067dfdc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/controller/AgendamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Agendamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/model/Agendamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AgendamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Recycle_Start/service/AgendamentoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-agendamento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrador-condominio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador-condominio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-agendamento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/condominio-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.dados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/empresa.principal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AgendamentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/controller/AgendamentoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Administrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Agendamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/model/Agendamento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/repositoris/AgendamentoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/repositoris/AgendamentoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AgendamentoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Recycle_Start/service/AgendamentoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style-condominio-agendamento.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style-condominio-agendamento.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style-condominio-principal.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style-condominio-principal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-agendamento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrador-condominio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrador-condominio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-agendamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-agendamento.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/condominio-principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.dados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/empresa.principal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

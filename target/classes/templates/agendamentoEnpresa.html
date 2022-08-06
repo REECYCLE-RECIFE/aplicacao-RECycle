@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <script type='text/javascript' src="main.js"></script>
+    <link rel="stylesheet" href="css/style-administrador-agendamento.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+</head>
+<body page='lista'>
+<header>
+    <nav>
+        <img src="img/Logo-Recycle-Transparente.png" alt="Logotipo RECycle" height="75px">
+        <ul class="nav-list">
+            <li class="a-hover"><a href="#"></a></li>
+            <li class="a-hover"><a href="#"></a></li>
+            <li class="a-hover"><a href="#"></a></li>
+            <li class="a-hover"><a href="#"></a></li>
+            <li class="a-hover"><a href="#"></a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="a-hover"><a href="/index">Voltar</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div id='listaRegistros'>
+        <div class="listaRegistros-cont">
+            <div class="search">
+                <div class="search-box">
+                    <input class="search-txt" placeholder="PESQUISAR" autofocus id='inputPesquisa'/>
+                    <a href="#" class="search-bnt"><img src="/img/lupa.png" alt="Search" height="20"></a>
+                </div>
+                <div class="text-table">
+                    <h1>Agendamento</h1>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>NOME</th>
+                    <th>CPF</th>
+                    <th>APARTAMENTO</th>
+                    <th>FREQUENCIA</th>
+                    <th>HORA</th>
+                    <th>DIA</th>
+                    <th>ESTADO</th>
+                    <th>CIDADE</th>
+                    <th>BAIRRO</th>
+                    <th>RUA</th>
+                    <th>NUMERO</th>
+                    <th>CEP</th>
+
+                </tr>
+                <tr th:each = "agendamento : ${agendamento}">
+                    <td th:text="${agendamento.nome}"></td>
+                    <td th:text = "${agendamento.cpf}"></td>
+                    <td th:text = "${agendamento.apartamento}"></td>
+                    <td th:text="${agendamento.frequecia}"></td>
+                    <td th:text = "${agendamento.horaDoAgendamento}"></td>
+                    <td th:text = "${agendamento.diaDoAgendamento}"></td>
+                    <td th:text="${agendamento.estado}"></td>
+                    <td th:text="${agendamento.cidade}"></td>
+                    <td th:text = "${agendamento.bairro}"></td>
+                    <td th:text = "${agendamento.rua}"></td>
+                    <td th:text = "${agendamento.numero}"></td>
+                    <td th:text = "${agendamento.cep}"></td>
+                                                                                                                                                         width="32px"> </a> </i></td>
+
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

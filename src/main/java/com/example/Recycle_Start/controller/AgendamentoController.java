@@ -49,6 +49,14 @@ public class AgendamentoController {
         return "agendamento-condominio";
     }
 
+    // para mostra o agendamento dentro da enpresa
+    @GetMapping("/agendamentoEnpresa")
+    public String agendamentoEnpresa(Model model){
+        model.addAttribute("agendamento" , this.agendamentoService.mostraAgendamanto());
+        return "agendamentoEnpresa";
+    }
+
+
 //  mostra agenadamanto
     @GetMapping("/Agendamantos")
     public  String MostraAgenda(Model model){
@@ -57,9 +65,9 @@ public class AgendamentoController {
         return "administrador-agendamento";
     }
 
-    @GetMapping("/deletar/{id_agendamento}")
-    public String deletarEmpresa( Integer  id_agendamento, Model model) {
+    @GetMapping("/deletarAgendamento/{id_agendamento}")
+    public String deletarAgendamento( @PathVariable("id_agendamento") Integer id_agendamento, Agendamento agendamento) {
         agendamentoService.excluirAgendamanto(id_agendamento);
-        return "redirect:/enpresas";
+        return "redirect:/Agendamantos";
     }
 }
