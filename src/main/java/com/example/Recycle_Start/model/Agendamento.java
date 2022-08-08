@@ -1,5 +1,6 @@
 package com.example.Recycle_Start.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,11 +11,11 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 
-
+@Data
 // obs não tenm tabela
 @Getter @Setter
 @Entity
-
+@Table(name = "agendamento")
 public class Agendamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,12 +65,6 @@ public class Agendamento {
     private String cep;
 
 
-    @ManyToOne // MUITOS PARA UM
-    @JoinColumn(name = "cnpj")
-    private Empresa empresa;
 
-    @ManyToOne // MUITOS PARA UM
-    @JoinColumn(name = "cpf")
-    private Usuario usuario;
 
 }

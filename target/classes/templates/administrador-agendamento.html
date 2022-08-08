@@ -21,7 +21,7 @@
             <li class="a-hover"><a href="#"></a></li>
           </ul>
           <ul class="nav-list">
-            <li class="a-hover"><a href="/index">Voltar</a></li>
+            <li class="a-hover"><a href="/Administrador">Voltar</a></li>
           </ul>
         </nav>
       </header>
@@ -40,23 +40,29 @@
     <table>
                 <tr>
                     <th>NOME</th>
+                    <th>CPF</th>
+                    <th>APARTAMENTO</th>
+                    <th>DIA</th>
+                    <th>CIDADE</th>
                     <th>BAIRRO</th>
-                    <th>CNPJ</th>
+                    <th>RUA</th>
+                    <th>NUMERO</th>
                     <th>REMOVER</th>
                 </tr>
-            <tr th:each = "empresa : ${empresa}">
-                <td th:text="${empresa.nome}"></td>
-                <td th:text = "${empresa.bairro}"></td>
-                <td th:text = "${empresa.cnpj}"></td>
-
+            <tr th:each = "agendamento : ${agendamento}">
+                <td th:text="${agendamento.nome}"></td>
+                <td th:text = "${agendamento.cpf}"></td>
+                <td th:text = "${agendamento.apartamento}"></td>
+                <td th:text = "${agendamento.diaDoAgendamento}"></td>
+                <td th:text="${agendamento.cidade}"></td>
+                <td th:text = "${agendamento.bairro}"></td>
+                <td th:text = "${agendamento.rua}"></td>
+                <td th:text = "${agendamento.numero}"></td>
                 <td><i id="icon_remover" class="fa fa-trash"
-                       aria-hidden="true" > <a th:href = "@{deletar/{cnpj} (cnpj=${empresa.cnpj})}"> <img src="img/excluir.png"
+                       aria-hidden="true" > <a th:href="@{/deletarAgendamento/{id_agendamento}(id_agendamento=${agendamento.id_agendamento})}"> <img src="img/excluir.png"
                                                                                                           alt="icon-lixeira"
                                                                                                           width="32px"> </a> </i></td>
-
             </tr>
-
-
     </table>
     </form>
     </div>

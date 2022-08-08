@@ -28,12 +28,11 @@
             <li class="a-hover"><a href="#"></a></li>
           </ul>
           <ul class="nav-list">
-            <li class="a-hover"><a href="/condominio">Voltar</a></li>
+            <li class="a-hover"><a href="/usuario">Voltar</a></li>
           </ul>
         </nav>
       </header>
       <div class="cadastro">
-      <div class="container">
         <div class="form">
             <form  th:action="@{/salvarAgendamento}" th:object="${agendamento}" method="post">
               <div class="form-header">
@@ -74,9 +73,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-        <div class="form-end">
+            <!--Form ENd-->  
             <div class="cep-rua">
               <div class="input-CEP">
                 <label for="cep" style="color: white;">CEP</label>
@@ -137,8 +134,7 @@
            </div>
           </form>
         </div>
-        </div>
-      </div>
+
     </div>
 </body>
 </html>
